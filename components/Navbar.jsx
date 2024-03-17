@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Image from "next/image";
 const Navbar = () => {
   return (
@@ -22,10 +23,18 @@ const Navbar = () => {
             </span>
           </div>
           <ul className="hidden md:flex justify-center gap-4 items-center text-2xl cursor-pointer ">
-            <li className="hover:text-cyan-600">Home</li>
-            <li className="hover:text-cyan-600">Service</li>
-            <li className="hover:text-cyan-600">Fleet</li>
-            <li className="hover:text-cyan-600">Contact</li>
+            <Link href={"/"}>
+              <li className="hover:text-cyan-600">Home</li>
+            </Link>
+            <Link href={"/service"}>
+              <li className="hover:text-cyan-600">Service</li>
+            </Link>
+            <Link href={"/fleet"}>
+              <li className="hover:text-cyan-600">Fleet</li>
+            </Link>
+            <Link href={"/contact"}>
+              <li className="hover:text-cyan-600">Contact</li>
+            </Link>
           </ul>
         </div>
       </div>
