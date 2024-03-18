@@ -19,20 +19,6 @@ const Hero = () => {
             <div>
               <img
                 className="rounded-lg w-[90vh] h-[90vh]"
-                src="https://images.pexels.com/photos/627678/pexels-photo-627678.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                alt="Image 1"
-              />
-            </div>
-            <div>
-              <img
-                className="rounded-lg w-[90vh] h-[90vh]"
-                src="https://images.pexels.com/photos/10187150/pexels-photo-10187150.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                alt="Image 2"
-              />
-            </div>
-            <div>
-              <img
-                className="rounded-lg w-[90vh] h-[90vh]"
                 src="https://images.pexels.com/photos/810357/pexels-photo-810357.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                 alt="Image 3"
               />
@@ -40,7 +26,22 @@ const Hero = () => {
             <div>
               <img
                 className="rounded-lg w-[90vh] h-[90vh]"
-                src="https://images.pexels.com/photos/3802510/pexels-photo-3802510.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                src="https://images.pexels.com/photos/627678/pexels-photo-627678.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="Image 1"
+              />
+            </div>
+            <div>
+              <img
+                className="rounded-lg w-[90vh] h-[90vh]"
+                src="https://images.pexels.com/photos/164634/pexels-photo-164634.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="Image 2"
+              />
+            </div>
+
+            <div>
+              <img
+                className="rounded-lg w-[90vh] h-[90vh]"
+                src="https://images.pexels.com/photos/70912/pexels-photo-70912.jpeg?auto=compress&cs=tinysrgb&w=600"
                 alt="Image 4"
               />
             </div>
