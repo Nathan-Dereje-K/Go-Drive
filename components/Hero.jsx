@@ -6,9 +6,8 @@ const Hero = () => {
   return (
     <>
       <div>
-        <h1 className=" ml-8 md:ml-20 lg:ml-32 text-5xl font-bold">Featured</h1>
         {/* outer hero */}
-        <div className="mr-6 ml-6 md:mr-20 md:ml-20 lg:mr-32 lg:ml-32 border rounded-s-2xl mt-6 ">
+        <div>
           <Carousel
             showThumbs={false}
             showArrows={true}
@@ -18,21 +17,21 @@ const Hero = () => {
           >
             <div>
               <img
-                className="rounded-lg w-[90vh] h-[90vh]"
-                src="https://images.pexels.com/photos/810357/pexels-photo-810357.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                className="w-full h-[30vh]"
+                src="https://images.pexels.com/photos/1046227/pexels-photo-1046227.jpeg?auto=compress&cs=tinysrgb&w=600"
                 alt="Image 3"
               />
             </div>
             <div>
               <img
-                className="rounded-lg w-[90vh] h-[90vh]"
-                src="https://images.pexels.com/photos/627678/pexels-photo-627678.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                className="w-full h-[30vh] bg-cover"
+                src="https://images.pexels.com/photos/13781/pexels-photo-13781.jpeg?auto=compress&cs=tinysrgb&w=600"
                 alt="Image 1"
               />
             </div>
             <div>
               <img
-                className="rounded-lg w-[90vh] h-[90vh]"
+                className="w-full h-[30vh] bg-cover"
                 src="https://images.pexels.com/photos/164634/pexels-photo-164634.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                 alt="Image 2"
               />
@@ -40,7 +39,7 @@ const Hero = () => {
 
             <div>
               <img
-                className="rounded-lg w-[90vh] h-[90vh]"
+                className="w-full h-[30vh] bg-cover"
                 src="https://images.pexels.com/photos/70912/pexels-photo-70912.jpeg?auto=compress&cs=tinysrgb&w=600"
                 alt="Image 4"
               />

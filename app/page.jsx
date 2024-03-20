@@ -1,17 +1,21 @@
-import Hero from "@/components/Hero";
 import Header from "@/components/Header";
 import Card from "@/components/Card";
 import Link from "next/link";
+import { FaRegMoneyBill1 } from "react-icons/fa6";
 import CarCard from "@/components/CarCard";
-
+import { BiHappyAlt } from "react-icons/bi";
+import { RiCustomerService2Fill } from "react-icons/ri";
+import { LiaCertificateSolid, LiaToolsSolid } from "react-icons/lia";
 export default function Home() {
   return (
     <main className="overflow-x-hidden">
       <Header />
-      <Card />
+      <div className="mt-24">
+        <Card />
+      </div>
       {/* <div className="m-16 text-4xl font-bold text-center"></div> */}
 
-      <div className="w-full flex justify-center">
+      <div className="w-full flex justify-center mt-14">
         <div className="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 mt-12">
           <CarCard />
           <CarCard />
@@ -20,7 +24,65 @@ export default function Home() {
         </div>
       </div>
 
-      <Hero />
+      {/* this is the promise div */}
+      <div className="mt-20 flex flex-col ">
+        <h2 className="text-center text-7xl font-bold text-black">
+          Our Promise
+        </h2>
+        {/* outer promise card */}
+        <div className="mt-16 w-full  ">
+          {/* promise cards */}
+          <div className="flex flex-col md:flex-row justify-center items-center gap-7 ">
+            {/* single card */}
+            <div className="flex flex-col border p-4 lg:p-10 hover:border-orange-700 gap-3 rounded-lg shadow-md bg-white w-96 md:w-auto">
+              <div className="flex justify-center item-center ">
+                <FaRegMoneyBill1
+                  className="text-red-500 hover:text-blue-700"
+                  size={50}
+                />
+              </div>
+              <h2 className="text-xl font-bold">
+                Good Price & Quality Service
+              </h2>
+            </div>
+
+            {/* single card */}
+            <div className="flex flex-col border p-4 lg:p-10 hover:border-orange-700 gap-3 rounded-lg shadow-md bg-white w-96 md:w-auto">
+              <div className="flex justify-center item-center ">
+                <RiCustomerService2Fill
+                  className="text-red-500 hover:text-blue-700"
+                  size={50}
+                />
+              </div>
+              <h2 className="text-xl font-bold">Reliable Customer Support</h2>
+            </div>
+
+            {/* single card */}
+            <div className="flex flex-col border p-4 lg:p-10 hover:border-orange-700 gap-3 rounded-lg shadow-md bg-white w-96 md:w-auto">
+              <div className="flex justify-center item-center ">
+                <LiaToolsSolid
+                  className="text-red-500 hover:text-blue-700"
+                  size={50}
+                />
+              </div>
+              <h2 className="text-xl font-bold">Constantly Maintained Cars</h2>
+            </div>
+
+            {/* single card */}
+            <div className="flex flex-col border p-4 lg:p-10 hover:border-orange-700 gap-3 rounded-lg shadow-md bg-white w-96 md:w-auto">
+              <div className="flex justify-center item-center ">
+                <BiHappyAlt
+                  className="text-red-500 hover:text-blue-700"
+                  size={50}
+                />
+              </div>
+              <h2 className="text-xl font-bold">Satisfaction Guaranteed</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* ready to ride */}
 
       <div className="text-center mt-32 mb-20">
         <h1 className="font-bold text-5xl">Ready to ride ?</h1>
