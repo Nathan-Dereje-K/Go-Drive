@@ -15,7 +15,12 @@ export default function Home() {
       </div>
       {/* <div className="m-16 text-4xl font-bold text-center"></div> */}
 
-      <div className="w-full flex justify-center mt-14">
+      <div className="w-full flex justify-center items-center mt-14">
+        <button className="w-56  p-4 rounded-md border border-blue-500 hover:border-orange-700 text-black text-lg font-bold">
+          Discover
+        </button>
+      </div>
+      <div className="w-full flex justify-center mt-2">
         <div className="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 mt-12">
           <CarCard />
           <CarCard />
@@ -78,6 +83,27 @@ export default function Home() {
               </div>
               <h2 className="text-xl font-bold">Satisfaction Guaranteed</h2>
             </div>
+          </div>
+        </div>
+      </div>
+      {/* customer lists */}
+      <div className="mt-16 gap-3">
+        <h1 className="text-center font-bold text-5xl mt-16">Customers</h1>
+        <div className=" flex justify-center items-center flex-col md:flex-row gap-4 mt-14">
+          <div className="w-80  h-48 ">
+            <img src="/images/customer.png" alt="Customer" />
+          </div>
+          <div className="w-80 h-48 ">
+            <img src="/images/custormer1.png" alt="Customer" />
+          </div>
+          <div className="w-80 h-48 ">
+            <img src="/images/customer2.png" alt="Customer" />
+          </div>
+          <div className="w-80 h-48 ">
+            <img src="/images/customer3.png" alt="Customer" />
+          </div>
+          <div className="w-80 h-48 ">
+            <img src="/images/customer4.png" alt="Customer" />
           </div>
         </div>
       </div>
