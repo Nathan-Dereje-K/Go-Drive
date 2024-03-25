@@ -5,7 +5,7 @@ import { FaRegMoneyBill1 } from "react-icons/fa6";
 import CarCard from "@/components/CarCard";
 import { BiHappyAlt } from "react-icons/bi";
 import { RiCustomerService2Fill } from "react-icons/ri";
-import { LiaCertificateSolid, LiaToolsSolid } from "react-icons/lia";
+import { LiaToolsSolid } from "react-icons/lia";
 export default function Home() {
   return (
     <main className="overflow-x-hidden">
@@ -39,57 +39,65 @@ export default function Home() {
           {/* promise cards */}
           <div className="flex flex-col md:flex-row justify-center items-center gap-7 ">
             {/* single card */}
-            <div className="flex flex-col border p-4 lg:p-10 hover:border-orange-700 gap-3 rounded-lg shadow-md bg-white w-96 md:w-auto">
+            <div className="flex flex-col border p-4 lg:p-10 hover:animate-pulse gap-3 rounded-lg shadow-md bg-white w-96 md:w-auto">
               <div className="flex justify-center item-center ">
                 <FaRegMoneyBill1
                   className="text-red-500 hover:text-blue-700"
                   size={50}
                 />
               </div>
-              <h2 className="text-xl font-bold">
+              <h2 className="text-xl font-bold text-center">
                 Good Price & Quality Service
               </h2>
             </div>
 
             {/* single card */}
-            <div className="flex flex-col border p-4 lg:p-10 hover:border-orange-700 gap-3 rounded-lg shadow-md bg-white w-96 md:w-auto">
+            <div className="flex flex-col border p-4 lg:p-10 hover:animate-pulse gap-3 rounded-lg shadow-md bg-white w-96 md:w-auto">
               <div className="flex justify-center item-center ">
                 <RiCustomerService2Fill
                   className="text-red-500 hover:text-blue-700"
                   size={50}
                 />
               </div>
-              <h2 className="text-xl font-bold">Reliable Customer Support</h2>
+              <h2 className="text-xl font-bold text-center">
+                Reliable Customer Support
+              </h2>
             </div>
 
             {/* single card */}
-            <div className="flex flex-col border p-4 lg:p-10 hover:border-orange-700 gap-3 rounded-lg shadow-md bg-white w-96 md:w-auto">
+            <div className="flex flex-col border p-4 lg:p-10 hover:animate-pulse gap-3 rounded-lg shadow-md bg-white w-96 md:w-auto">
               <div className="flex justify-center item-center ">
                 <LiaToolsSolid
                   className="text-red-500 hover:text-blue-700"
                   size={50}
                 />
               </div>
-              <h2 className="text-xl font-bold">Constantly Maintained Cars</h2>
+              <h2 className="text-xl font-bold text-center">
+                Constantly Maintained Cars
+              </h2>
             </div>
 
             {/* single card */}
-            <div className="flex flex-col border p-4 lg:p-10 hover:border-orange-700 gap-3 rounded-lg shadow-md bg-white w-96 md:w-auto">
+            <div className="flex flex-col border p-4 lg:p-10 hover:animate-pulse gap-3 rounded-lg shadow-md bg-white w-96 md:w-auto">
               <div className="flex justify-center item-center ">
                 <BiHappyAlt
                   className="text-red-500 hover:text-blue-700"
                   size={50}
                 />
               </div>
-              <h2 className="text-xl font-bold">Satisfaction Guaranteed</h2>
+              <h2 className="text-xl font-bold text-center">
+                Satisfaction Guaranteed
+              </h2>
             </div>
           </div>
         </div>
       </div>
       {/* customer lists */}
       <div className="mt-16 gap-3">
-        <h1 className="text-center font-bold text-5xl mt-16">Customers</h1>
-        <div className=" flex justify-center items-center flex-col md:flex-row gap-4 mt-14">
+        <h1 className="text-center text-7xl font-bold text-black mt-16">
+          Customers
+        </h1>
+        <div className=" flex justify-center items-center flex-col md:flex-row gap-8 md:gap-4 mt-14">
           <div className="w-80  h-48 ">
             <img src="/images/customer.png" alt="Customer" />
           </div>
@@ -111,7 +119,7 @@ export default function Home() {
       {/* ready to ride */}
 
       <div className="text-center mt-32 mb-20">
-        <h1 className="font-bold text-5xl">Ready to ride ?</h1>
+        <h1 className="font-bold text-7xl  text-black">Ready to ride ?</h1>
         <p className="mt-1">Find the perfect ride for your next adventure!</p>
         <Link href={"/service"}>
           <button className="mt-3 p-3 border bg-blue-500 hover:bg-blue-500 hover:animate-pulse hover:border-orange-700 rounded-md text-white">
