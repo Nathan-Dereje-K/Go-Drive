@@ -18,13 +18,6 @@ const Hero = () => {
             <div>
               <img
                 className="w-full h-auto bg-cover"
-                src="https://images.pexels.com/photos/1046227/pexels-photo-1046227.jpeg?auto=compress&cs=tinysrgb&w=600"
-                alt="Image 3"
-              />
-            </div>
-            <div>
-              <img
-                className="w-full h-auto bg-cover"
                 src="https://images.pexels.com/photos/13781/pexels-photo-13781.jpeg?auto=compress&cs=tinysrgb&w=600"
                 alt="Image 1"
               />
@@ -42,6 +35,13 @@ const Hero = () => {
                 className="w-full h-auto bg-cover"
                 src="https://images.pexels.com/photos/70912/pexels-photo-70912.jpeg?auto=compress&cs=tinysrgb&w=600"
                 alt="Image 4"
+              />
+            </div>
+            <div>
+              <img
+                className="w-full h-auto bg-cover"
+                src="https://images.pexels.com/photos/1046227/pexels-photo-1046227.jpeg?auto=compress&cs=tinysrgb&w=600"
+                alt="Image 3"
               />
             </div>
           </Carousel>

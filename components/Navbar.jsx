@@ -33,22 +33,22 @@ const Navbar = () => {
             </span>
           </div>
           {/* Menu for larger screens */}
-          <ul className="hidden md:flex justify-center gap-4 items-center text-2xl cursor-pointer ">
+          <ul className="hidden lg:flex justify-center gap-5 items-center text-2xl cursor-pointer ">
             <Link href={"/"}>
-              <li className="hover:text-cyan-600">Home</li>
+              <li className="hover:text-orange-600">Home</li>
             </Link>
-            <Link href={"/service"}>
-              <li className="hover:text-cyan-600">Service</li>
+            <Link href={"/rental"}>
+              <li className="hover:text-orange-600">Rental</li>
             </Link>
             <Link href={"/fleet"}>
-              <li className="hover:text-cyan-600">Fleet</li>
+              <li className="hover:text-orange-600">About</li>
             </Link>
             <Link href={"/contact"}>
-              <li className="hover:text-cyan-600">Contact</li>
+              <li className="hover:text-orange-600">Contact</li>
             </Link>
           </ul>
           {/* Burger menu icon */}
-          <div className="md:hidden flex justify-center items-center">
+          <div className="lg:hidden flex justify-center items-center">
             {isMenuOpen ? (
               <FaTimes
                 size={30}
@@ -66,18 +66,18 @@ const Navbar = () => {
         </div>
         {/* Menu for smaller screens */}
         {isMenuOpen && (
-          <ul className="md:hidden flex flex-col gap-4 items-center text-2xl cursor-pointer">
+          <ul className="lg:hidden flex flex-col gap-4 items-center text-2xl cursor-pointer">
             <Link href={"/"}>
-              <li className="hover:text-cyan-600">Home</li>
+              <li className="hover:text-orange-600">Home</li>
             </Link>
             <Link href={"/service"}>
-              <li className="hover:text-cyan-600">Service</li>
+              <li className="hover:text-orange-600">Rental</li>
             </Link>
             <Link href={"/fleet"}>
-              <li className="hover:text-cyan-600">Fleet</li>
+              <li className="hover:text-orange-600">About</li>
             </Link>
             <Link href={"/contact"}>
-              <li className="hover:text-cyan-600">Contact</li>
+              <li className="hover:text-orange-600">Contact</li>
             </Link>
           </ul>
         )}

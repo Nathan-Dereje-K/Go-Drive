@@ -10,28 +10,44 @@ export default function Home() {
   return (
     <main className="overflow-x-hidden">
       <Header />
-      <div className="mt-24">
+      <div className="ml-4 mr-4 md:ml-11 md:mr-11 lg:mr-[10vh] lg:ml-[10vh]  mt-24">
         <Card />
       </div>
       {/* <div className="m-16 text-4xl font-bold text-center"></div> */}
 
-      <div className="w-full flex justify-center items-center mt-14">
-        <button className="w-56  p-4 rounded-md border border-blue-500 hover:border-orange-700 text-black text-lg font-bold">
+      <div className="w-full flex justify-start items-center mt-14">
+        <h2 className="ml-4 md:ml-11 lg:ml-[10vh]  text-black text-3xl md:text-5xl font-bold">
           Discover
-        </button>
+        </h2>
       </div>
-      <div className="w-full flex justify-center mt-2">
+      <div className="w-full h-full flex justify-center mt-2">
         <div className="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 mt-12">
-          <CarCard />
-          <CarCard />
-          <CarCard />
-          <CarCard />
+          <CarCard
+            img={"cars/car6.jpg"}
+            title={"Pick-Up"}
+            price={"From $50 a Day"}
+          />
+          <CarCard
+            img={"cars/car2.jpg"}
+            title={"Economy"}
+            price={"From $50 a Day"}
+          />
+          <CarCard
+            img={"cars/car4.jpg"}
+            title={"High Roof"}
+            price={"From $50 a Day"}
+          />
+          <CarCard
+            img={"cars/car5.jpg"}
+            title={"Bus"}
+            price={"From $50 a Day"}
+          />
         </div>
       </div>
 
       {/* this is the promise div */}
       <div className="mt-20 flex flex-col ">
-        <h2 className="text-center text-7xl font-bold text-black">
+        <h2 className="text-center text-3xl md:text-5xl font-bold text-black">
           Our Promise
         </h2>
         {/* outer promise card */}
@@ -93,25 +109,45 @@ export default function Home() {
         </div>
       </div>
       {/* customer lists */}
-      <div className="mt-16 gap-3">
-        <h1 className="text-center text-7xl font-bold text-black mt-16">
+      <div className="mt-28 gap-5">
+        <h1 className="text-center text-3xl md:text-5xl font-bold text-black ">
           Customers
         </h1>
-        <div className=" flex justify-center items-center flex-col md:flex-row gap-8 md:gap-4 mt-14">
-          <div className="w-80  h-48 ">
-            <img src="/images/customer.png" alt="Customer" />
+        <div className="flex justify-center items-center flex-wrap gap-6 md:gap-8 lg:gap-12 mt-16 mx-2 sm:mx-4">
+          <div className="w-64 md:w-80 h-40 md:h-48 relative overflow-hidden rounded-lg shadow-lg transform transition duration-300 hover:scale-105">
+            <img
+              src="/images/customer.png"
+              alt="Customer"
+              className="w-full h-full object-cover"
+            />
           </div>
-          <div className="w-80 h-48 ">
-            <img src="/images/custormer1.png" alt="Customer" />
+          <div className="w-64 md:w-80 h-40 md:h-48 relative overflow-hidden rounded-lg shadow-lg transform transition duration-300 hover:scale-105">
+            <img
+              src="/images/custormer1.png"
+              alt="Customer"
+              className="w-full h-full object-cover"
+            />
           </div>
-          <div className="w-80 h-48 ">
-            <img src="/images/customer2.png" alt="Customer" />
+          <div className="w-64 md:w-80 h-40 md:h-48 relative overflow-hidden rounded-lg shadow-lg transform transition duration-300 hover:scale-105">
+            <img
+              src="/images/customer2.png"
+              alt="Customer"
+              className="w-full h-full object-cover"
+            />
           </div>
-          <div className="w-80 h-48 ">
-            <img src="/images/customer3.png" alt="Customer" />
+          <div className="w-64 md:w-80 h-40 md:h-48 relative overflow-hidden rounded-lg shadow-lg transform transition duration-300 hover:scale-105">
+            <img
+              src="/images/customer3.png"
+              alt="Customer"
+              className="w-full h-full object-cover"
+            />
           </div>
-          <div className="w-80 h-48 ">
-            <img src="/images/customer4.png" alt="Customer" />
+          <div className="w-64 md:w-80 h-40 md:h-48 relative overflow-hidden rounded-lg shadow-lg transform transition duration-300 hover:scale-105">
+            <img
+              src="/images/customer4.png"
+              alt="Customer"
+              className="w-full h-full object-cover"
+            />
           </div>
         </div>
       </div>
@@ -121,8 +157,8 @@ export default function Home() {
       <div className="text-center mt-32 mb-20">
         <h1 className="font-bold text-7xl  text-black">Ready to ride ?</h1>
         <p className="mt-1">Find the perfect ride for your next adventure!</p>
-        <Link href={"/service"}>
-          <button className="mt-3 p-3 border bg-blue-500 hover:bg-blue-500 hover:animate-pulse hover:border-orange-700 rounded-md text-white">
+        <Link href={"/fleet"}>
+          <button className="mt-3 p-3 border bg-blue-500 hover:bg-blue-500 hover:animate-pulse rounded-md text-white">
             See all car options
           </button>
         </Link>
