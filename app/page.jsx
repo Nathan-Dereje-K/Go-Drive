@@ -21,7 +21,7 @@ export default function Home() {
         </h2>
       </div>
       <div className="w-full h-full flex justify-center mt-2">
-        <div className="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 mt-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  mt-12">
           <CarCard
             img={"cars/car6.jpg"}
             title={"Pick-Up"}

@@ -5,7 +5,7 @@ const CarCard = ({ img, title, price }) => {
     <>
       <div className="p-4 flex flex-col items-center w-full md:w-96">
         {/* Changed to flex, centered items */}
-        <img src={img} alt="Featured Car" className="rounded-lg h-60" />
+        <img src={img} alt="Featured Car" className="rounded-lg w-auto h-60" />
         <div className="text-center font-bold text-red-600">
           <h1 className="text-3xl px-1 py-3">{title}</h1>
           <h3 className="text-xl p-1">{price}</h3>
