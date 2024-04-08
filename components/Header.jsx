@@ -9,7 +9,7 @@ const Header = () => {
           src="https://images.pexels.com/photos/3764000/pexels-photo-3764000.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
           alt=""
         />
-        <div className="absolute bottom-64 left-16 text-center md:text-start text-white z-20 ">
+        <div className="absolute bottom-72 left-14 text-center md:text-start text-white z-20 ">
           <h2 className="text-6xl  md:text-7xl lg:text-9xl">
             Go <span className="text-orange-500">Drive</span>
           </h2>
