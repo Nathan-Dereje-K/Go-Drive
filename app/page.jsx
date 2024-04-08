@@ -152,7 +152,7 @@ export default function Home() {
         <div className="text-center mt-32 mb-20">
           <h1 className="font-bold text-7xl  text-black">Ready to ride ?</h1>
           <p className="mt-1">Find the perfect ride for your next adventure!</p>
-          <Link href={"/fleet"}>
+          <Link href={"/rental"}>
             <button className="mt-3 p-3 border bg-blue-500 hover:bg-blue-500 hover:animate-pulse rounded-md text-white">
               See all car options
             </button>

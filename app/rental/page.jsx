@@ -5,7 +5,7 @@ const RentalCars = () => {
   return (
     <>
       <div>
-        <Hero />
+        <h1>Available cars</h1>
       </div>
     </>
   );

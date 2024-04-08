@@ -8,7 +8,9 @@ const Contact = () => {
   return (
     <>
       {/* screen */}
-      <div className="w-full h-[100vh] bg-pink-100 "></div>
+      <div>
+        <h1>Contact Page</h1>
+      </div>
     </>
   );
 };
