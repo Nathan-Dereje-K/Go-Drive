@@ -16,16 +16,15 @@ const Navbar = () => {
       {/* outer nav */}
       <div className="py-2 shadow-lg bg-white w-full">
         {/* inside nav */}
-        <div className="flex justify-between m-5 text-black">
+        <div className="flex justify-between mt-5 mb-5 ml-48 mr-48 text-black">
           <div className="flex gap-3 items-center">
             {/* Logo */}
             <div>
               <Image
-                src={"/images/logo.png"}
-                className="rounded-full"
+                src={"/logo/drive.png"}
                 alt="Logo"
                 width={70}
-                height={30}
+                height={70}
               />
             </div>
             <span>

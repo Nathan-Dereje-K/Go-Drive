@@ -3,7 +3,7 @@ import React from "react";
 const CarCard = ({ img, title, price }) => {
   return (
     <>
-      <div className="p-4 flex flex-col items-center w-full md:w-96">
+      <div className="p-4 flex flex-col items-center w-full md:w-80">
         {/* Changed to flex, centered items */}
         <img src={img} alt="Featured Car" className="rounded-lg w-full h-60" />
         <div className="text-center font-bold text-red-600">
