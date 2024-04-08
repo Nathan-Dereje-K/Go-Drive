@@ -13,7 +13,7 @@ const Hero = () => {
             showArrows={true}
             autoPlay={true}
             infiniteLoop={true}
-            interval={3000}
+            interval={2000}
           >
             <div>
               <img

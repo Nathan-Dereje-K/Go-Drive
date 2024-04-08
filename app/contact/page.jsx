@@ -2,42 +2,39 @@ import React from "react";
 
 const ContactPage = () => {
   return (
-    <div className="contact-page container mx-auto px-4 py-16 md:py-24">
+    <div className="contact-page mx-auto px-4 py-16 md:py-24 lg:px-8 lg:mx-16">
       <h1 className="text-3xl md:text-5xl font-bold text-center mb-8">
         Contact Us
       </h1>
       <div className="flex flex-col md:flex-row justify-between items-center gap-8 mx-4 md:mx-0">
-        <div className="map-container md:w-1/2">
-          <iframe
-            className="w-full h-[600px] md:h-[700px] rounded-lg"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1419.0295419832296!2d38.73564631970063!3d9.038485486102853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x16356165fbae8cf3%3A0x9d85adfc5cdd5f0c!2sKokeb%20Building!5e0!3m2!1sen!2set!4v1652865095487!5m2!1sen!2set"
-            allowFullScreen=""
-            loading="lazy"
-            title="Google Map"
-          ></iframe>
-        </div>
-        <div className="contact-form md:w-1/2 bg-gray-100 p-8 rounded-lg">
-          <h2 className="text-2xl font-bold mb-4">Get In Touch</h2>
-          <p className="mb-4">
+        <div className="contact-form w-full md:w-1/2 bg-white shadow-md rounded-lg p-8">
+          <h2 className="text-3xl font-bold mb-6 text-center">Get In Touch</h2>
+          <p className="mb-6 text-gray-700 text-center">
             Have questions or want to learn more about our services? Feel free
             to contact us by filling out the form below or visit us at our
             office. We'd love to hear from you!
           </p>
-          <div className="mb-4">
-            <strong>Address:</strong>
-            <br />
-            Ethiopia, Hayarat in front of Kokeb Building, 1st floor
-            <br />
-            P.O. Box 41397, Addis Ababa
+          <div className="mb-6">
+            <strong className="block mb-2">Address:</strong>
+            <p className="text-gray-700">
+              Ethiopia, Hayarat in front of Kokeb Building, 1st floor
+              <br />
+              P.O. Box 41397, Addis Ababa
+            </p>
           </div>
-          <div className="mb-4">
-            <strong>Phone:</strong> +251-123-456-789
-            <br />
-            <strong>Email:</strong> info@godrive.com
+          <div className="mb-6">
+            <strong className="block mb-2">Phone:</strong>
+            <p className="text-gray-700">
+              +251-911-13-04-16
+              <br />
+              <strong>Alt Phone:</strong> +251-713-44-04-16
+              <br />
+              <strong>Email:</strong> godriveitservice@gmail.com
+            </p>
           </div>
           <form className="space-y-4">
             <div>
-              <label className="block mb-1">Name</label>
+              <label className="block mb-1 text-gray-700">Name</label>
               <input
                 type="text"
                 placeholder="Your Name"
@@ -45,7 +42,7 @@ const ContactPage = () => {
               />
             </div>
             <div>
-              <label className="block mb-1">Email</label>
+              <label className="block mb-1 text-gray-700">Email</label>
               <input
                 type="email"
                 placeholder="Your Email"
@@ -53,7 +50,7 @@ const ContactPage = () => {
               />
             </div>
             <div>
-              <label className="block mb-1">Message</label>
+              <label className="block mb-1 text-gray-700">Message</label>
               <textarea
                 rows="5"
                 placeholder="Your Message"
@@ -64,6 +61,16 @@ const ContactPage = () => {
               Send Message
             </button>
           </form>
+        </div>
+
+        <div className="map-container md:w-1/2">
+          <iframe
+            className="w-full h-[600px] md:h-[700px] rounded-lg"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1419.0295419832296!2d38.73564631970063!3d9.038485486102853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x16356165fbae8cf3%3A0x9d85adfc5cdd5f0c!2sKokeb%20Building!5e0!3m2!1sen!2set!4v1652865095487!5m2!1sen!2set"
+            allowFullScreen=""
+            loading="lazy"
+            title="Google Map"
+          ></iframe>
         </div>
       </div>
     </div>
