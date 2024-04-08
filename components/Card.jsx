@@ -16,20 +16,18 @@ const Card = () => {
           <div className="mt-10">
             {/* Overview */}
             <p>
-              Go Drive Car Rentals is a rapidly growing company providing
-              high-quality, reliable, and affordable rental vehicles across the
-              region. With a diverse fleet including sedans, SUVs, vans, buses,
-              pickups, and luxury cars, we offer a wide range of options to meet
-              every customer's needs.
+              Go Drive Car Rentals offers high-quality, reliable, and affordable
+              rental vehicles across the region. With a diverse fleet of sedans,
+              SUVs, vans, buses, pickups, and luxury cars, we meet every
+              customer's needs.
             </p>
             {/* Mission */}
             <p>
-              Our mission at Go Drive is to deliver a hassle-free and enjoyable
-              car rental experience. We achieve this by prioritizing top-notch
-              customer service, maintaining our vehicles to the highest
-              standards, and offering competitive pricing. Our goal is to exceed
-              our customers' expectations and ensure their satisfaction with
-              every rental.
+              Our mission is to provide a hassle-free and enjoyable car rental
+              experience by prioritizing top-notch customer service, maintaining
+              our vehicles to the highest standards, and offering competitive
+              pricing. We aim to exceed our customers' expectations and ensure
+              their satisfaction with every rental.
             </p>
           </div>
         </div>
