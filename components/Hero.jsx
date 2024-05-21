@@ -16,7 +16,7 @@ const Hero = () => {
           <div className="relative w-full h-[50vh] overflow-hidden">
             <img
               className="w-full h-full object-cover object-top"
-              src="https://images.pexels.com/photos/13781/pexels-photo-13781.jpeg?auto=compress&cs=tinysrgb&w=600"
+              src="https://images.pexels.com/photos/1073031/pexels-photo-1073031.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
               alt="Image 1"
             />
           </div>
@@ -37,7 +37,7 @@ const Hero = () => {
           <div className="relative w-full h-[50vh] overflow-hidden">
             <img
               className="w-full h-full object-cover object-top"
-              src="https://images.pexels.com/photos/119435/pexels-photo-119435.jpeg?auto=compress&cs=tinysrgb&w=600"
+              src="https://images.pexels.com/photos/416703/pexels-photo-416703.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
               alt="Image 4"
             />
           </div>
