@@ -32,8 +32,8 @@ const ContactPage = () => {
               P.O. Box 41397, Addis Ababa
             </p>
           </div>
-          {/* this is the map container */}
-          <div className="p-2 bg-zinc-400 border border-slate-800 rounded-lg">
+          {/* this is the form container div */}
+          <div className="p-2  border border-slate-800 rounded-lg">
             <form className="space-y-4">
               <div>
                 <label className="block mb-1 text-gray-700">Name</label>
