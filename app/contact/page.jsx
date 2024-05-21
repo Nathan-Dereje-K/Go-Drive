@@ -33,7 +33,7 @@ const ContactPage = () => {
             </p>
           </div>
           {/* this is the form container div */}
-          <div className="p-2  border border-slate-800 rounded-lg">
+          <div className="p-2  border hover:border-slate-800 rounded-lg">
             <form className="space-y-4">
               <div>
                 <label className="block mb-1 text-gray-700">Name</label>

@@ -8,8 +8,8 @@ const AboutPage = () => {
     <>
       <div className="relative">
         <Hero />
-        <div className="absolute bottom-auto left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white">
-          <h1 className="text-4xl md:text-5xl lg:text-12xl font-bold mb-96">
+        <div className="absolute  left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-96">
             About Us
           </h1>
         </div>
@@ -20,15 +20,15 @@ const AboutPage = () => {
             Who we are <span className="text-orange-500">?</span>
           </h1>
           <p className="mt-4 text-lg leading-relaxed text-justify">
-            At Go Drive, we pride ourselves on providing better transportation
-            solutions to our clients. Whether you need a luxury sedan for a
-            special occasion, a reliable pickup truck for your business needs, a
-            spacious minivan for family trips, or a comfortable bus for group
-            travel, we've got you covered. Our fleet is meticulously maintained
-            to ensure safety and comfort on every journey. With Go Drive, you
-            can expect professionalism, reliability, and exceptional service
-            tailored to your needs.
+            Since launching in 2018, Go Drive Car Rentals has become a leader in
+            the industry, known for our core values: integrity, flexibility, and
+            unwavering commitment to customer satisfaction. We cater to both
+            individuals and businesses of all sizes, offering a variety of
+            customized and all-inclusive rental options. Our focus on exceeding
+            corporate client expectations has fueled our rapid growth, allowing
+            us to continuously improve our services.
           </p>
+
           {/* Additional Features */}
           <div className="mt-8 flex flex-wrap justify-center">
             <div className="w-full md:w-1/2 lg:w-1/4 p-4 text-center">
@@ -93,8 +93,8 @@ const AboutPage = () => {
               </div>
               <div className="p-6 bg-white rounded-lg shadow-md">
                 <p className="text-lg mb-4">
-                  "I booked a minivan for a family vacation, and it was perfect!
-                  Spacious and well-maintained. Thank you, Go Drive!"
+                  "We booked a minivan for a family vacation, and it was
+                  perfect! Spacious and well-maintained. Thank you, Go Drive!"
                 </p>
                 <p className="text-sm font-semibold">
                   - Barok Tour and Car rent

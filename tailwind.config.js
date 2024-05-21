@@ -14,5 +14,14 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addUtilities }) {
+      const newUtilities = {
+        ".clip-half": {
+          "clip-path": "polygon(0 0, 100% 0, 100% 50%, 0 50%)",
+        },
+      };
+      addUtilities(newUtilities);
+    },
+  ],
 };
