@@ -3,12 +3,22 @@ import React from "react";
 const ContactPage = () => {
   return (
     <div className="contact-page mx-auto px-4 py-16 md:py-24 lg:px-8 lg:mx-16">
-      <h1 className="text-3xl md:text-5xl font-bold text-center mb-8">
+      <h1 className="text-3xl text-orange-400 md:text-5xl font-bold text-center mb-8">
         Contact Us
       </h1>
       <div className="flex flex-col md:flex-row justify-between items-center gap-8 mx-4 md:mx-0">
         <div className="contact-form w-full md:w-1/2 bg-white shadow-md rounded-lg p-8">
           <h2 className="text-3xl font-bold mb-6 text-center">Get In Touch</h2>
+          <div className="mb-6">
+            <p className="text-gray-700">
+              <strong>Phone:</strong> +251-911-13-04-16
+              <br />
+              <strong>Alt Phone:</strong> +251-713-44-04-16
+              <br />
+              <strong>Email:</strong> godriveitservice@gmail.com
+            </p>
+          </div>
+
           <p className="mb-6 text-gray-700 text-center">
             Have questions or want to learn more about our services? Feel free
             to contact us by filling out the form below or visit us at our
@@ -20,16 +30,6 @@ const ContactPage = () => {
               Ethiopia, Hayarat in front of Kokeb Building, 1st floor
               <br />
               P.O. Box 41397, Addis Ababa
-            </p>
-          </div>
-          <div className="mb-6">
-            <strong className="block mb-2">Phone:</strong>
-            <p className="text-gray-700">
-              +251-911-13-04-16
-              <br />
-              <strong>Alt Phone:</strong> +251-713-44-04-16
-              <br />
-              <strong>Email:</strong> godriveitservice@gmail.com
             </p>
           </div>
           <form className="space-y-4">

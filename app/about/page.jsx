@@ -17,7 +17,7 @@ const AboutPage = () => {
         <div className="mt-8 md:mt-16 mx-4 md:mx-24">
           {/* title */}
           <h1 className="mt-8 mb-4 text-center text-3xl md:text-4xl lg:text-5xl font-bold">
-            Welcome to <span className="text-orange-500">Go Drive</span>
+            Who we are <span className="text-orange-500">?</span>
           </h1>
           <p className="mt-4 text-lg leading-relaxed text-justify">
             At Go Drive, we pride ourselves on providing better transportation
@@ -74,25 +74,31 @@ const AboutPage = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               <div className="p-6 bg-white rounded-lg shadow-md">
                 <p className="text-lg mb-4">
-                  "I've been using Go Drive for my business transportation needs
-                  for years now. Always reliable and professional. Highly
+                  "We have been using Go Drive for our business transportation
+                  needs for years now. Always reliable and professional. Highly
                   recommended!"
                 </p>
-                <p className="text-sm font-semibold">- John Doe</p>
+                <p className="text-sm font-semibold">
+                  - Ethiopian Olympic committee
+                </p>
               </div>
               <div className="p-6 bg-white rounded-lg shadow-md">
                 <p className="text-lg mb-4">
                   "Fantastic service! The drivers are friendly, and the vehicles
                   are clean and comfortable. Will definitely use again!"
                 </p>
-                <p className="text-sm font-semibold">- Jane Smith</p>
+                <p className="text-sm font-semibold">
+                  - Purpose Black Ethiopia
+                </p>
               </div>
               <div className="p-6 bg-white rounded-lg shadow-md">
                 <p className="text-lg mb-4">
                   "I booked a minivan for a family vacation, and it was perfect!
                   Spacious and well-maintained. Thank you, Go Drive!"
                 </p>
-                <p className="text-sm font-semibold">- Michael Johnson</p>
+                <p className="text-sm font-semibold">
+                  - Barok Tour and Car rent
+                </p>
               </div>
             </div>
           </div>
