@@ -9,8 +9,9 @@ import {
 const Footer = () => {
   return (
     <footer className="bg-slate-800 text-white py-10">
-      <div className="container mx-auto text-center">
-        <div className="flex justify-center space-x-8 mb-5">
+      <div className="container mx-auto">
+        {/* Flex container for icons and text, responsive on smaller devices */}
+        <div className="flex flex-wrap justify-center items-center space-x-4 mb-5">
           <a
             href="#"
             className="flex items-center space-x-2 hover:bg-blue-500 p-2 rounded transition"
