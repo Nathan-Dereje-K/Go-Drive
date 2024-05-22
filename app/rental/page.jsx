@@ -57,7 +57,7 @@ export default function RentalPage() {
       name: "Toyota Minibus",
       type: "Minibus",
       price: 80,
-      available: false,
+      available: true,
       image: "/cars/car4.jpg",
     },
     {
@@ -65,7 +65,7 @@ export default function RentalPage() {
       name: "Toyota Car",
       type: "Economy",
       price: 80,
-      available: false,
+      available: true,
       image: "/cars/car8.jpg",
     },
     {
