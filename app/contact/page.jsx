@@ -8,7 +8,9 @@ const ContactPage = () => {
       </h1>
       <div className="flex flex-col md:flex-row justify-between items-center gap-8 mx-4 md:mx-0">
         <div className="contact-form w-full md:w-1/2 bg-white shadow-md rounded-lg p-8">
-          <h2 className="text-3xl font-bold mb-6 text-center">Get In Touch</h2>
+          <h2 className="md:text-3xl text-xl font-bold mb-6 text-center">
+            Get In Touch
+          </h2>
           <div className="mb-6">
             <p className="text-gray-700">
               <strong>Phone:</strong> +251-911-13-04-16
