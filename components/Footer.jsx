@@ -13,20 +13,6 @@ const Footer = () => {
         {/* Flex container for icons and text, responsive on smaller devices */}
         <div className="flex flex-wrap justify-center items-center space-x-4 mb-5">
           <a
-            href="#"
-            className="flex items-center space-x-2 hover:bg-blue-500 p-2 rounded transition"
-          >
-            <FaTelegramPlane className="text-xl" />
-            <span>Telegram</span>
-          </a>
-          <a
-            href="#"
-            className="flex items-center space-x-2 hover:bg-blue-400 p-2 rounded transition"
-          >
-            <FaTwitter className="text-xl" />
-            <span>Twitter</span>
-          </a>
-          <a
             href="mailto:godriveitservice@gmail.com"
             className="flex items-center space-x-2 hover:bg-red-500 p-2 rounded transition"
           >
@@ -39,6 +25,20 @@ const Footer = () => {
           >
             <FaPhone className="text-xl" />
             <span>Phone</span>
+          </a>
+          <a
+            href="#"
+            className="flex items-center space-x-2 hover:bg-blue-500 p-2 rounded transition"
+          >
+            <FaTelegramPlane className="text-xl" />
+            <span>Telegram</span>
+          </a>
+          <a
+            href="#"
+            className="flex items-center space-x-2 hover:bg-blue-400 p-2 rounded transition"
+          >
+            <FaTwitter className="text-xl" />
+            <span>Twitter</span>
           </a>
         </div>
         <hr className="border-t border-gray-400 my-5" />

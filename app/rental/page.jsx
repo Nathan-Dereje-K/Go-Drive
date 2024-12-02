@@ -104,7 +104,7 @@ export default function RentalPage() {
     });
   return (
     <>
-      <div className="container mx-auto p-6 mt-5">
+      <div className="container mx-auto p-6 mt-5 min-h-screen">
         <h1 className="text-4xl font-bold text-gray-800 mb-10 text-center">
           Available <span className="text-orange-500">Cars</span> for Rent
         </h1>

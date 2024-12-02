@@ -14,9 +14,9 @@ const Navbar = () => {
   return (
     <>
       {/* outer nav */}
-      <div className="py-2 shadow-lg bg-white w-full">
+      <div className="py-1 shadow-lg bg-white w-full sticky top-0 z-50 ">
         {/* inside nav */}
-        <div className="flex justify-between  mt-5 mb-5 ml-5 mr-5 lg:ml-48 lg:mr-48 text-black">
+        <div className="flex justify-between  mt-4 mb-4 ml-3 mr-3 lg:ml-48 lg:mr-48 text-black">
           <div className="flex gap-3 items-center">
             {/* Logo */}
             <div>
@@ -28,7 +28,9 @@ const Navbar = () => {
               />
             </div>
             <span>
-              <h1 className="text-4xl font-bold">Go Drive</h1>
+              <Link href={"/"}>
+                <h1 className="text-4xl font-bold">Go Drive</h1>
+              </Link>
             </span>
           </div>
           {/* Menu for larger screens */}
@@ -50,13 +52,13 @@ const Navbar = () => {
           <div className="lg:hidden flex justify-center items-center">
             {isMenuOpen ? (
               <FaTimes
-                size={30}
+                size={25}
                 onClick={toggleMenu}
                 className="cursor-pointer"
               />
             ) : (
               <FaBars
-                size={30}
+                size={25}
                 onClick={toggleMenu}
                 className="cursor-pointer"
               />
@@ -65,20 +67,22 @@ const Navbar = () => {
         </div>
         {/* Menu for smaller screens */}
         {isMenuOpen && (
-          <ul className="lg:hidden flex flex-col gap-4 items-center text-2xl cursor-pointer">
-            <Link href={"/"}>
-              <li className="hover:text-orange-600">Home</li>
-            </Link>
-            <Link href={"/rental"}>
-              <li className="hover:text-orange-600">Rental</li>
-            </Link>
-            <Link href={"/about"}>
-              <li className="hover:text-orange-600">About</li>
-            </Link>
-            <Link href={"/contact"}>
-              <li className="hover:text-orange-600">Contact</li>
-            </Link>
-          </ul>
+          <>
+            <ul className="lg:hidden flex flex-col gap-4 items-center text-2xl cursor-pointer">
+              <Link href={"/"}>
+                <li className="hover:text-orange-600">Home</li>
+              </Link>
+              <Link href={"/rental"}>
+                <li className="hover:text-orange-600">Rental</li>
+              </Link>
+              <Link href={"/about"}>
+                <li className="hover:text-orange-600">About</li>
+              </Link>
+              <Link href={"/contact"}>
+                <li className="hover:text-orange-600">Contact</li>
+              </Link>
+            </ul>
+          </>
         )}
       </div>
     </>
