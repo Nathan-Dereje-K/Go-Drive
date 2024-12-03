@@ -89,9 +89,14 @@ export default function RentalPage() {
   const [search, setSearch] = useState("");
   const [filter, setFilter] = useState("");
 
-  const filteredCars = cars.filter((car) =>
-    car.name.toLowerCase().includes(search.toLowerCase())
-  );
+  const filteredCars = cars.filter((car) => {
+    // Filter by search term (already working)
+    if (search) {
+      return car.name.toLowerCase().includes(search.toLowerCase());
+    }
+    // If no search term is entered, filter by selected type (if any)
+    return filter ? car.type === filter : true;
+  });
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -169,6 +174,9 @@ export default function RentalPage() {
                 {car.available ? "Available" : "Not Available"}
               </p>
               <p className="text-sm font-medium mt-2">Phone: +251 911130416</p>
+              {filter && (
+                <p className="text-gray-600 mb-2">Filtered by Type: {filter}</p>
+              )}
             </motion.div>
           ))}
         </motion.div>
