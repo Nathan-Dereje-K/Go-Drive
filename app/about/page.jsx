@@ -1,7 +1,9 @@
+"use client";
 import React from "react";
 import Hero from "@/components/Hero";
 import { FaCheckCircle } from "react-icons/fa";
 import Link from "next/link";
+import { easeInOut, easeOut, motion } from "framer-motion";
 
 const AboutPage = () => {
   return (
@@ -9,17 +11,32 @@ const AboutPage = () => {
       <div className="relative">
         <Hero />
         <div className="absolute  left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-96">
+          <motion.h1
+            initial={{ opacity: 0, x: 20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ delay: 0.4, duration: 0.5, ease: easeInOut }}
+            className="text-4xl md:text-5xl lg:text-6xl font-bold mb-96"
+          >
             About Us
-          </h1>
+          </motion.h1>
         </div>
         {/* note about us */}
         <div className="mt-8 md:mt-16 mx-4 md:mx-24">
           {/* title */}
-          <h1 className="mt-8 mb-4 text-center text-3xl md:text-4xl lg:text-5xl font-bold">
+          <motion.h1
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.5, duration: 0.6, ease: easeInOut }}
+            className="mt-8 mb-4 text-center text-3xl md:text-4xl lg:text-5xl font-bold"
+          >
             Who we are <span className="text-orange-500">?</span>
-          </h1>
-          <p className="mt-4 text-lg leading-relaxed text-justify">
+          </motion.h1>
+          <motion.p
+            initial={{ opacity: 0, x: 20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ delay: 0.6, duration: 0.7, ease: easeInOut }}
+            className="mt-4 text-lg leading-relaxed text-justify"
+          >
             Since launching in 2018, Go Drive Car Rentals has become a leader in
             the industry, known for our core values: integrity, flexibility, and
             unwavering commitment to customer satisfaction. We cater to both
@@ -27,7 +44,7 @@ const AboutPage = () => {
             customized and all-inclusive rental options. Our focus on exceeding
             corporate client expectations has fueled our rapid growth, allowing
             us to continuously improve our services.
-          </p>
+          </motion.p>
 
           {/* Additional Features */}
           <div className="mt-8 flex flex-wrap justify-center">
