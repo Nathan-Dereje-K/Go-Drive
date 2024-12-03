@@ -1,8 +1,9 @@
 "use client";
 import Link from "next/link";
 import { useState } from "react";
-import { FaBars, FaTimes } from "react-icons/fa"; // Assuming you're using react-icons
+import { FaBars, FaTimes } from "react-icons/fa";
 import Image from "next/image";
+import { easeInOut, easeOut, motion } from "framer-motion";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -16,7 +17,7 @@ const Navbar = () => {
       {/* outer nav */}
       <div className="py-1 shadow-lg bg-white w-full sticky top-0 z-50 ">
         {/* inside nav */}
-        <div className="flex justify-between  mt-4 mb-4 ml-3 mr-3 lg:ml-48 lg:mr-48 text-black">
+        <div className="flex justify-between  py-4 px-8 text-black">
           <div className="flex gap-3 items-center">
             {/* Logo */}
             <div>
@@ -76,20 +77,50 @@ const Navbar = () => {
         {/* Menu for smaller screens */}
         {isMenuOpen && (
           <>
-            <ul className="lg:hidden flex flex-col gap-4 items-center text-2xl cursor-pointer">
-              <Link href={"/"}>
-                <li className="hover:text-orange-600">Home</li>
+            <motion.ul
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: 20 }}
+              transition={{ duration: 0.3, ease: "easeInOut" }}
+              className="lg:hidden flex flex-col gap-4 items-center text-2xl cursor-pointer"
+            >
+              <Link href="/">
+                <motion.li
+                  onClick={toggleMenu}
+                  whileHover={{ scale: 1.1 }}
+                  className="hover:text-orange-600"
+                >
+                  Home
+                </motion.li>
               </Link>
-              <Link href={"/rental"}>
-                <li className="hover:text-orange-600">Rental</li>
+              <Link href="/rental">
+                <motion.li
+                  onClick={toggleMenu}
+                  whileHover={{ scale: 1.1 }}
+                  className="hover:text-orange-600"
+                >
+                  Rental
+                </motion.li>
               </Link>
-              <Link href={"/about"}>
-                <li className="hover:text-orange-600">About</li>
+              <Link href="/about">
+                <motion.li
+                  onClick={toggleMenu}
+                  whileHover={{ scale: 1.1 }}
+                  className="hover:text-orange-600"
+                >
+                  About
+                </motion.li>
               </Link>
-              <Link href={"/contact"}>
-                <li className="hover:text-orange-600">Contact</li>
+              <Link href="/contact">
+                <motion.li
+                  onClick={toggleMenu}
+                  whileHover={{ scale: 1.1 }}
+                  className="hover:text-orange-600"
+                >
+                  Contact
+                </motion.li>
               </Link>
-            </ul>
+            </motion.ul>
           </>
         )}
       </div>

@@ -1,23 +1,24 @@
 "use client";
 import { useState } from "react";
-import { FaSearch } from "react-icons/fa";
+import { motion } from "framer-motion";
+
 export default function RentalPage() {
   const cars = [
     {
-      id: 1, // Changed to avoid potential conflicts
+      id: 1,
       name: "Suzuki Dzire",
       type: "Sedan",
-      price: 20, // This is an estimate, you can find the actual price online
+      price: 20,
       available: true,
-      image: "/cars/car2.jpg", // Replace with actual image path
+      image: "/cars/car2.jpg",
     },
     {
-      id: 2, // Changed to avoid potential conflicts
+      id: 2,
       name: "Toyota Hiace",
       type: "Van",
-      price: 150, // Daily rental price based on the website linked in the search results
-      available: true, // Availability unknown without contacting the rental company
-      image: "/cars/car3.jpg", // Replace with actual image path
+      price: 150,
+      available: true,
+      image: "/cars/car3.jpg",
     },
     {
       id: 3,
@@ -27,22 +28,21 @@ export default function RentalPage() {
       available: true,
       image: "/cars/car1.jpg",
     },
-
     {
-      id: 4, // Changed to avoid potential conflicts
+      id: 4,
       name: "Toyota Coaster",
       type: "Bus",
-      price: "", // Price unavailable without contacting rental companies
-      available: true, // Availability unknown without contacting rental companies
-      image: "/cars/car5.jpg", // Replace with actual image path
+      price: "",
+      available: true,
+      image: "/cars/car5.jpg",
     },
     {
-      id: 5, // Changed to avoid potential conflicts
+      id: 5,
       name: "Toyota Hilux",
       type: "Pick-up",
-      price: 25000, // This is an estimate, you can find the actual price online
-      available: true, // Availability depends on dealership
-      image: "/cars/car6.jpg", // Replace with actual image path
+      price: 25000,
+      available: true,
+      image: "/cars/car6.jpg",
     },
     {
       id: 6,
@@ -86,22 +86,28 @@ export default function RentalPage() {
     },
   ];
 
-  // The Logic
   const [search, setSearch] = useState("");
   const [filter, setFilter] = useState("");
-  const [sort, setSort] = useState("");
 
-  const filteredCars = cars
-    .filter((car) => car.name.toLowerCase().includes(search.toLowerCase()))
-    .filter((car) => (filter ? car.type === filter : true))
-    .sort((a, b) => {
-      if (sort === "price-asc") {
-        return a.price - b.price;
-      } else if (sort === "price-desc") {
-        return b.price - a.price;
-      }
-      return 0;
-    });
+  const filteredCars = cars.filter((car) =>
+    car.name.toLowerCase().includes(search.toLowerCase())
+  );
+
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.2,
+      },
+    },
+  };
+
+  const cardVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+  };
+
   return (
     <>
       <div className="container mx-auto p-6 mt-5 min-h-screen">
@@ -112,7 +118,7 @@ export default function RentalPage() {
           <select
             onChange={(e) => setFilter(e.target.value)}
             value={filter}
-            className="w-full md:w-1/3  p-2 border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 bg-slate-300"
+            className="w-full md:w-1/3 p-2 border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 bg-slate-300"
           >
             <option value="">All Types</option>
             <option value="SUV">SUV</option>
@@ -124,7 +130,7 @@ export default function RentalPage() {
             <option value="Van">Van</option>
             <option value="Bus">Bus</option>
           </select>
-          <div className="w-full md:w-1/3 p-2 border border-stone-800 rounded-lg shadow-sm  focus:ring-2 focus:ring-blue-500">
+          <div className="w-full md:w-1/3 p-2 border border-gray-600 rounded-lg shadow-sm focus:ring-2 focus:ring-blue-500">
             <input
               type="text"
               placeholder="Search by brand name"
@@ -133,20 +139,17 @@ export default function RentalPage() {
               className="w-full focus:outline-none"
             />
           </div>
-          {/* <select
-            onChange={(e) => setSort(e.target.value)}
-            value={sort}
-            className="w-full md:w-1/3 px-4 py-2 border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
-          >
-            <option value="">Sort By</option>
-            <option value="price-asc">Price: Low to High</option>
-            <option value="price-desc">Price: High to Low</option>
-          </select> */}
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <motion.div
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
+          variants={containerVariants}
+          initial="hidden"
+          animate="visible"
+        >
           {filteredCars.map((car) => (
-            <div
+            <motion.div
               key={car.id}
+              variants={cardVariants}
               className="border rounded-lg shadow-lg p-6 bg-white hover:shadow-xl transition-shadow duration-300"
             >
               <img
@@ -158,7 +161,6 @@ export default function RentalPage() {
                 {car.name}
               </h2>
               <p className="text-gray-600 mb-2">Type: {car.type}</p>
-              {/* <p className="text-gray-600 mb-4">Price: ${car.price}/day</p> */}
               <p
                 className={`text-sm font-medium ${
                   car.available ? "text-green-600" : "text-red-600"
@@ -167,9 +169,9 @@ export default function RentalPage() {
                 {car.available ? "Available" : "Not Available"}
               </p>
               <p className="text-sm font-medium mt-2">Phone: +251 911130416</p>
-            </div>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </>
   );
