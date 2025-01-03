@@ -12,9 +12,9 @@ const AboutPage = () => {
         <Hero />
         <div className="absolute  left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white">
           <motion.h1
-            initial={{ opacity: 0, x: 20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ delay: 0.4, duration: 0.5, ease: easeInOut }}
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ delay: 0.4, duration: 0.5, ease: easeOut }}
             className="text-4xl md:text-5xl lg:text-6xl font-bold mb-96"
           >
             About Us

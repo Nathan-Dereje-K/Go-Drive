@@ -24,7 +24,7 @@ const Header = () => {
           initial={{ y: 50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 1.2, delay: 1, ease: "easeOut" }}
-          className="absolute bottom-72 md:bottom-64 left-14 text-center md:text-start text-white z-20"
+          className=" flex flex-col justify-start items-start absolute bottom-80 md:bottom-64 left-14 text-center md:text-start text-white z-20"
         >
           <motion.h2
             initial={{ y: -30, opacity: 0 }}
