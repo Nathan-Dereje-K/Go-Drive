@@ -6,7 +6,7 @@ import Footer from "@/components/Footer";
 const nunito = Nunito({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Go Drive",
+  title: "Go Drive Rental Excellence",
   description: "A local car rental website",
 };
 

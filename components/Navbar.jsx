@@ -15,7 +15,7 @@ const Navbar = () => {
   return (
     <>
       {/* outer nav */}
-      <div className="py-1 shadow-lg bg-white w-full sticky top-0 z-50 ">
+      <nav className=" py-1 shadow-lg bg-white w-full sticky top-0 z-50  ">
         {/* inside nav */}
         <div className="flex justify-between  py-4 px-8 text-black">
           <div className="flex gap-3 items-center">
@@ -123,7 +123,7 @@ const Navbar = () => {
             </motion.ul>
           </>
         )}
-      </div>
+      </nav>
     </>
   );
 };

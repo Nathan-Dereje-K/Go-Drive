@@ -23,17 +23,18 @@ const Hero = () => {
           <div className="relative w-full h-[50vh] overflow-hidden">
             <img
               className="w-full h-full object-cover object-top"
-              src="https://images.pexels.com/photos/168938/pexels-photo-168938.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-              alt="Image 2"
+              src="https://images.pexels.com/photos/13810898/pexels-photo-13810898.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt="Image 3"
             />
           </div>
           <div className="relative w-full h-[50vh] overflow-hidden">
             <img
               className="w-full h-full object-cover object-top"
-              src="https://images.pexels.com/photos/1054211/pexels-photo-1054211.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-              alt="Image 3"
+              src="https://images.pexels.com/photos/225841/pexels-photo-225841.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt="Image 2"
             />
           </div>
+
           <div className="relative w-full h-[50vh] overflow-hidden">
             <img
               className="w-full h-full object-cover object-top"
